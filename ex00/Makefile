@@ -2,7 +2,7 @@ NAME = brainz
 CXX = c++
 CXXFLAGS := -Wall -Wextra -Werror
 
-SOURCES := main.cpp
+SOURCES := main.cpp Zombie.cpp
 OBJECTS := $(SOURCES:.cpp=.o)
 
 target asan: CXXFLAGS += -fsanitize=address,undefined -g
