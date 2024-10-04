@@ -8,6 +8,8 @@ std::string replace_substr(std::string line, std::string from, std::string to)
 	std::string result;
 	size_t from_len = from.length();
 
+	if (from_len == 0)
+		return line;
 	while ((pos = line.find(from, pos)) != std::string::npos)
 	{
 		result += line.substr(0, pos) + to;
