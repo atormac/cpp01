@@ -40,8 +40,6 @@ int main(int argc, char **argv)
 		input.close();
 		return (1);
 	}
-	std::cout << output_filename << std::endl;
-
 	std::string line;
 	while (getline(input, line))
 	{
