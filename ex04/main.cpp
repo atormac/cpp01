@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <regex>
 
 std::string replace_substr(std::string line, std::string from, std::string to)
 {
