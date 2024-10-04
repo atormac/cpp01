@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	std::string line;
-	while (getline(input, line))
+	while (std::getline(input, line))
 	{
 		line = replace_substr(line + "\n", argv[2], argv[3]);
 		output << line;
